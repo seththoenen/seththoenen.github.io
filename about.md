@@ -6,4 +6,6 @@ header: true
 permalink: /about/
 ---
 
-This page is supposed to be about me. I should probably put some stuff here.
+<h2>About</h2>
+
+<p>About content will be placed here.</p>
