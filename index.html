@@ -12,6 +12,27 @@ layout: default
 
   <p><a href="/inspec/">Inspec for Windows</a></p>
 
+  <h3>Blog Posts</h3>
+
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for post in site.posts %}
+          <tr>
+            <td>{{ post.date | date: "%b %-d, %Y" }}</td>
+            <td><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
   <h3>Education</h3>
   <div class="table-wrapper">
     <table>
@@ -41,24 +62,4 @@ layout: default
     </table>
   </div>
 
-  <h3>Blog Posts</h3>
-
-  <div class="table-wrapper">
-    <table>
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Title</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for post in site.posts %}
-          <tr>
-            <td>{{ post.date | date: "%b %-d, %Y" }}</td>
-            <td><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a></td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
 </section>
