@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Jekyll Review"
+date:   2016-10-05 13:00:25 -0500
+categories: post
+---
+
+Before starting this site, I had heard of [Jekyll](https://www.jekyllrb.com) but hadn't ever used it. After getting familiar with it while consitructing this site, I'd highly recommend it to anyone who has experience with web front end technologies. Considering that it seemsly integrates with [GitHub](https://www.github.com) and [GitHub Pages](https://pages.github.com) it makes Jekyll even more appealing.
+
+It's been quite the enjoyable experience constructing this site and I look forward to building it out to add more content in the future.
+
+Cheers,
+
+Seth

@@ -13,7 +13,7 @@
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-size: 100%;
+		font-size: 125%;
 		font: inherit;
 		vertical-align: baseline;
 	}
@@ -1836,7 +1836,7 @@
 		color: #646464;
 		font-weight: 300;
 		line-height: 1em;
-		margin: 0 0 0.5em 0;
+		margin: 0.25em 0 0.25em 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2556,7 +2556,7 @@
 
 		table th {
 			color: #646464;
-			font-size: 0.9em;
+			font-size: 1.1em;
 			font-weight: 300;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;

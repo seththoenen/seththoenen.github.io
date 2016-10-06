@@ -1,27 +1,64 @@
 ---
 layout: default
 ---
+<header>
+<h2>Seth Thoenen</h2>
 
-<h2>Guides and Tutorials</h2>
+<p>A systems administrator with a passion for technology, automation, and lean business practices.</p>
+</header>
 
-<a href="/inspec/">Inspec for Windows</a>
+<section class="box">
+  <h3>Guides</h3>
 
-<br />
-<br />
+  <p><a href="/inspec/">Inspec for Windows</a></p>
 
-<!-- Commented out until blog posts are real blog posts
-<h2>Blog Posts</h2>
+  <h3>Education</h3>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Institution</th>
+          <th>Degree Program</th>
+          <th>Date Completed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Missouri State University</td>
+          <td>Masters of Business Administration</td>
+          <td>May 2014</td>
+        </tr>
+        <tr>
+          <td>Missouri State University</td>
+          <td>Bachelor of Science - Computer and Information Systems</td>
+          <td>May 2012</td>
+        </tr>
+        <tr>
+          <td>Missouri State University</td>
+          <td>Bachelor of Science - Information Technology Service Management</td>
+          <td>May 2012</td>
+        </tr>
+    </table>
+  </div>
 
-<ul class="post-list">
-  {% for post in site.posts %}
-    <li>
-      <span >{{ post.date | date: "%b %-d, %Y" }}</span>
+  <h3>Blog Posts</h3>
 
-      <h3>
-        <a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-      </h3>
-    </li>
-  {% endfor %}
-</ul>
-
--->
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for post in site.posts %}
+          <tr>
+            <td>{{ post.date | date: "%b %-d, %Y" }}</td>
+            <td><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
