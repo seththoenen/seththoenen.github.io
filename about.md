@@ -6,4 +6,4 @@ header: true
 permalink: /about/
 ---
 
-<p>About content will be placed here.</p>
+About content will be placed here.
