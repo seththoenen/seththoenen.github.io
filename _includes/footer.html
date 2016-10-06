@@ -1,3 +1,32 @@
+<!-- Footer -->
+<footer id="footer">
+  
+  <!-- TO DO: Add support for Linkedin Icons -->
+  <ul class="icons">
+    {% if site.github_username %}
+      <li>
+        {% include icon-github.html username=site.github_username %}
+      </li>
+    {% endif %}
+
+    {% if site.twitter_username %}
+      <li>
+        {% include icon-twitter.html username=site.twitter_username %}
+      </li>
+    {% endif %}
+
+  </ul>
+
+  <ul class="copyright">
+    <li>&copy; Seth Thoenen</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+  </ul>
+
+</footer>
+
+<!-- Old stuff from Minema Template
+
+# TO DO: Clean this up when Alpha template is working
+
 <footer class="site-footer">
 
   <div class="wrapper">
@@ -44,3 +73,5 @@
   </div>
 
 </footer>
+
+-->
