@@ -2,27 +2,23 @@
 layout: default
 ---
 
-<div class="home">
+<h2>Guides and Tutorials</h2>
 
-  <h1>Guides and Tutorials</h1>
+<a href="/inspec/">Inspec for Windows</a>
 
-  <a href="/inspec/">Inspec for Windows</a>
+<br />
+<br />
 
-  <br />
-  <br />
+<h2>Blog Posts</h2>
 
-  <h1 class="page-heading">Posts</h1>
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <span >{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-</div>
+      <h3>
+        <a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+      </h3>
+    </li>
+  {% endfor %}
+</ul>

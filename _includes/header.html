@@ -1,3 +1,26 @@
+<!-- Header -->
+<header id="header">
+
+  <h1><a href="{{ full_base_url }}/">{{ site.title | escape }}</a></h1>
+  
+  <nav id="nav">
+    <ul>
+      <li><a href="{{ full_base_url }}/">Home</a></li>
+      {% for my_page in site.pages %}
+        {% if my_page.header %}
+          <li><a href="{{ my_page.url | prepend: full_base_url }}">{{ my_page.title | escape }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+
+</header>
+
+<!--
+
+# Below is old stuff from the original minema template
+# TO DO: Clean this up once Alpha template is working
+
 <header class="site-header" role="banner">
 
   <div class="wrapper">
@@ -27,3 +50,5 @@
   </div>
 
 </header>
+
+-->
