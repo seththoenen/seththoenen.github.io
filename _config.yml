@@ -16,7 +16,7 @@
 title: Seth Thoenen
 email: seth_thoenen@hotmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Just a place where I can record my thoughts for the world to see. - Seth Thoenen
+  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: seththoenen
