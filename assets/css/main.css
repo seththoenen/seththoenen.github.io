@@ -1796,7 +1796,7 @@
 	}
 
 	body, input, select, textarea {
-		color: #777;
+		color: #333;
 		font-family: "Source Sans Pro", sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -1833,7 +1833,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #646464;
+		color: #333;
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0.25em 0 0.25em 0;
