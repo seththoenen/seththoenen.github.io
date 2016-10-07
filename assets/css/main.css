@@ -3132,15 +3132,15 @@
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			opacity: 0.35;
+			opacity: 0.75;
 		}
 
 			#footer .icons a:hover {
-				opacity: 0.75;
+				opacity: 0.95;
 			}
 
 		#footer .copyright {
-			color: #999;
+			color: #666;
 			font-size: 0.9em;
 			line-height: 1em;
 			margin: 2em 0 0 0;
