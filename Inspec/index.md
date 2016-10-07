@@ -11,3 +11,15 @@ The Inspec for Windows tutorial series will walk you through all of the basic st
 As the title states, this tutorial series will focus on Windows. All examples will be ran against a Windows Server 2012 R2 system.
 
 Tutorials will be added over the next few days, so check back soon!
+
+{% assign inspecPages = site.pages | where:"tutorial-category", "inspec" | sort: 'tutorial-order' %}
+
+{% if inspecPages[1] %}
+ YUP!
+{% endif %}
+
+<ul>
+{% for page in inspecPages %}
+  <li><a href="{{ page.url | prepend: full_base_url }}">{{ page.tutorial-order }} - {{ page.title | escape }}</a></li>
+{% endfor %}
+</ul>

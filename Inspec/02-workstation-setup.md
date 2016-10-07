@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: tutorial
 title: Getting Started with Inspec
 page-type: tutorial
 tutorial-category: inspec
+tutorial-order: 02
 permalink: /inspec/workstation-setup
 ---
 
