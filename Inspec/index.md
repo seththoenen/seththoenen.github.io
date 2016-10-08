@@ -6,18 +6,13 @@ header: yes
 permalink: /inspec/
 ---
 
-The Inspec for Windows tutorial series will walk you through all of the basic steps to set Inspec up on your local machine and begin auditing systems. No previous experience with Inspec is required, however a familiarity with Ruby is a plus.
+The Inspec for Windows tutorial series will walk you through all of the steps to set Inspec up on your local machine and begin auditing systems. No previous experience with Inspec is required, however a familiarity with Ruby is a plus.
 
 As the title states, this tutorial series will focus on Windows. All examples will be ran against a Windows Server 2012 R2 system.
 
-Tutorials will be added over the next few days, so check back soon!
+<h3>Getting Started with Inspec</h3>
 
 {% assign inspecPages = site.pages | where:"tutorial-category", "inspec" | sort: 'tutorial-order' %}
-
-{% if inspecPages[1] %}
- YUP!
-{% endif %}
-
 <ul>
 {% for page in inspecPages %}
   <li><a href="{{ page.url | prepend: full_base_url }}">{{ page.tutorial-order }} - {{ page.title | escape }}</a></li>
