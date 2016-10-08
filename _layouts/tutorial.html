@@ -1,0 +1,19 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% assign prevPageNum = page.tutorial-order | minus:1 %}
+{% assign nextPageNum = page.tutorial-order | plus:1 %}
+{% assign prevPage = site.pages | where:"tutorial-category", page.tutorial-category | where:"tutorial-order", prevPageNum  %}
+{% assign nextPage = site.pages | where:"tutorial-category", page.tutorial-category | where:"tutorial-order", nextPageNum  %}
+
+{% for page in nextPage %}
+ <a class="button" style="float:right" href="{{ page.url | prepend: full_base_url }}">Next: {{ page.title }}</a>
+{% endfor %}
+
+{% for page in prevPage %}
+ <a class="button" href="{{ page.url | prepend: full_base_url }}">Previous: {{ page.title }}</a>
+{% endfor %}
+<br />
