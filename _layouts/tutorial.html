@@ -9,11 +9,11 @@ layout: page
 {% assign prevPage = site.pages | where:"tutorial-category", page.tutorial-category | where:"tutorial-order", prevPageNum  %}
 {% assign nextPage = site.pages | where:"tutorial-category", page.tutorial-category | where:"tutorial-order", nextPageNum  %}
 
-{% if nextPage %}
- <a class="button" style="float:right" href="{{ nextPage.url | prepend: full_base_url }}">Next: {{ nextPage.title }}</a>
+{% for page in nextPage %}
+ <a class="button" style="float:right" href="{{ page.url | prepend: full_base_url }}">Next: {{ page.title }}</a>
 {% endfor %}
 
-{% if prevPage %}
- <a class="button" href="{{ prevPage.url | prepend: full_base_url }}">Previous: {{ prevPage.title }}</a>
+{% for page in prevPage %}
+ <a class="button" href="{{ page.url | prepend: full_base_url }}">Previous: {{ page.title }}</a>
 {% endfor %}
 <br />
