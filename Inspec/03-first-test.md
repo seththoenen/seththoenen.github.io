@@ -24,6 +24,7 @@ inspec exec .\first-test.rb
 ```
 
 You should get output that looks like this:
+
 ```
 C:\Inspec> inspec exec .\first-test.rb
 
@@ -41,6 +42,7 @@ Congratulations for writng and running your first Inspec test! Here is a breakdo
 The `inspec` command is primary method to do anything Inspec related on your local machine. You will be using this command a lot in this tutorial series. The `exec` sub-command tells Inspec to execute the file(s) given in the next argument. You gave the `exec` sub-command the file you just created, `first-test.rb`. So, what happened is you told Inspec to execute the contents of `first-test.rb`.
 
 If you'd like to know more about the `exec` sub-command, you can run the following and it will give you all of the options and argument for `exec`.
+
 ```
 inspec help exec
 ```
