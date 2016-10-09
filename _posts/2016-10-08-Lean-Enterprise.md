@@ -6,7 +6,7 @@ categories: post
 ---
 
 <blockquote>
-Software is eating the wrld.
+Software is eating the world.
 
 - Marc Anderseen
 </blockquote>
