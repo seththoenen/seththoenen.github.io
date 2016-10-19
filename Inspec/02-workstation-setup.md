@@ -26,7 +26,10 @@ choco install Ruby
 ```
 
 <h3>Install Inspec</h3>
-In order to install Inspec, you will have to download it from the official [Inspec download page](https://downloads.chef.io/inspec/windows/). Download the Inspec installer and run it to install Inspec on your local machine.
+You can use Chocolatey to install Inspec as well. To do this run th ebelow code snippet in a PowerShell window.
+```
+choco install Inspec
+```
 
 After you have instaled Inspec, open a new PowerShell window, type `inspec` and press enter. If you are presented with an error message, you haven't installed Inspec. Otherwise, if you get output that looks similar to the below snippet, you have installed Inspec successfully.
 
