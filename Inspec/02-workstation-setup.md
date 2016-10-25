@@ -25,13 +25,13 @@ Once you have Chocolatey installed you can use it to install Ruby. To do this ru
 choco install Ruby
 ```
 
-<h3>Install Inspec</h3>
-You can use Chocolatey to install Inspec as well. To do this run th ebelow code snippet in a PowerShell window.
+<h3>Install InSpec</h3>
+You can use Chocolatey to install InSpec as well. To do this run th ebelow code snippet in a PowerShell window.
 ```
-gem install Inspec
+gem install InSpec
 ```
 
-After you have instaled Inspec, open a new PowerShell window, type `inspec` and press enter. If you are presented with an error message, you haven't installed Inspec. Otherwise, if you get output that looks similar to the below snippet, you have installed Inspec successfully.
+After you have instaled InSpec, open a new PowerShell window, type `inspec` and press enter. If you are presented with an error message, you haven't installed InSpec. Otherwise, if you get output that looks similar to the below snippet, you have installed InSpec successfully.
 
 ```
 Commands:
@@ -65,7 +65,7 @@ choco install git
 ```
 
 <h3>Install a Text Editor (Optoinal)</h3>
-In order to write and edit Inspec code, you'll need to use a text editor. While the default Notepad editor on Windows will work, I would recommend you use a text editor that is more robust. The two I recommend are [Visual Studio Code](https://code.visualstudio.com/) or [Atom](https://atom.io/). Both are free and open source and you can install either of these with Chocolatey.
+In order to write and edit InSpec code, you'll need to use a text editor. While the default Notepad editor on Windows will work, I would recommend you use a text editor that is more robust. The two I recommend are [Visual Studio Code](https://code.visualstudio.com/) or [Atom](https://atom.io/). Both are free and open source and you can install either of these with Chocolatey.
 
 To install Visual Studio Code, run the following inside a PowerShell window:
 ```
