@@ -15,9 +15,9 @@ Date: 5/28/2017
 
 This is a comprehensive tutorial that will walk you through connecting your local Windows 10 machine to Microsoft Azure so you can start writing InSpec tests. This tutorial will utilize the [inspec-azure](https://github.com/chef/inspec-azure) repository announced at ChefConf 2017. Eventually, this will be merged into the base InSpec gem.
 
-### 1. Install the ChefDK
+### 1. Workstation Setup
 
-In order to get started with InSpec, you will need several ruby gems. The best way to get all of these quickly is to download and install the [Chef Development Kit](https://downloads.chef.io/chefdk/1.4.3#windows). At the time of this writing, the latest ChefDK version was 1.4.3.
+If you haven't ever written InSpec before, you will need to [set up your workstation](/inspec/workstation-setup).
 
 ### 2. Generate a New InSpec Profile
 
@@ -57,13 +57,7 @@ https://github.com/chef/inspec-azure/archive/master.tar.gz
 
 ### 4. Install Ruby Gem Dependencies
 
-The `inspec-azure` repository utilizes several ruby gems under the hood that aren't included with the ChefDK. Eventually, these will most likely be added as a dependency for the InSpec gem. But, for now, we need to install them individually. Run the following command to install the gems required by `inspec-azure`.
-
-```
-chef gem install ms_rest_azure azure_mgmt_resources azure_mgmt_compute azure_mgmt_network inifile
-```
-
-Note: The above command assumes that your system defaults to the the version of Ruby that is shipped with the ChefDK. If you are using a different version of Ruby, run the same command, omitting the initial `chef` command.
+The `inspec-azure` repository utilizes several ruby gems under the hood that aren't included with the InSpec gem yet. Eventually, these will most likely be added as a dependency for the InSpec gem. But, for now, we need to install them individually. Run the following command to install the gems required by `inspec-azure`.
 
 ```
 gem install ms_rest_azure azure_mgmt_resources azure_mgmt_compute azure_mgmt_network inifile
