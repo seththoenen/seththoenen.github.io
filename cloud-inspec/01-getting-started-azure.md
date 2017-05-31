@@ -13,7 +13,7 @@ Co-Author: Shane Chaplain
 
 Date: 5/28/2017
 
-This is a comprehensive tutorial that will walk you through connecting your local Windows 10 machine to Microsoft Azure so you can start writing InSpec tests. This tutorial will utilize the [inSpec-azure](https://github.com/chef/inspec-azure) repository announced at ChefConf 2017. Eventually, this will be merged into the base InSpec gem.
+This is a comprehensive tutorial that will walk you through connecting your local Windows 10 machine to Microsoft Azure so you can start writing InSpec tests. This tutorial will utilize the [inspec-azure](https://github.com/chef/inspec-azure) repository announced at ChefConf 2017. Eventually, this will be merged into the base InSpec gem.
 
 ### 1. Install the ChefDK
 
