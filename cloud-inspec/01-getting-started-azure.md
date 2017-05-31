@@ -196,5 +196,3 @@ Target:  local://
 Profile Summary: 0 successful, 1 failures, 0 skipped
 Test Summary: 0 successful, 3 failures, 0 skipped
 ```
-
-Note: these all failed because I targeted a CentOS virtual machine.
