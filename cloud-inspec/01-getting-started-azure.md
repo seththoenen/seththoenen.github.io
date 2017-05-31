@@ -15,11 +15,9 @@ Date: 5/28/2017
 
 This is a comprehensive tutorial that will walk you through connecting your local Windows 10 machine to Microsoft Azure so you can start writing InSpec tests. This tutorial will utilize the [inspec-azure](https://github.com/chef/inspec-azure) repository announced at ChefConf 2017. Eventually, this will be merged into the base InSpec gem.
 
-### 1. Workstation Setup
+If you haven't ever written InSpec before, you will need to [set up your workstation](/inspec/workstation-setup) before starting this tutorial.
 
-If you haven't ever written InSpec before, you will need to [set up your workstation](/inspec/workstation-setup).
-
-### 2. Generate a New InSpec Profile
+### 1. Generate a New InSpec Profile
 
 Navigate to a folder where you would like to place your InSpec profile. This tutorial will put it on the root of the C:\ drive. To create a new InSpec profile, run the following command from PowerShell. Be sure to change directory into the directory you want your profile to be in.
 
@@ -39,7 +37,7 @@ Open up the entire profile in a code editor such as Atom or Visual Studio Code. 
 code .
 ```
 
-### 3. Update InSpec.yml
+### 2. Update InSpec.yml
 
 The `inspec-azure` repository contains an additional set of controls that add functionality to the base InSpec gem. In order to use them in your InSpec profile, you will need to create a dependency so your InSpec profile references the controls in the `inspec-azure` repository. You can do this by updating `inspec.yml` and appending the following code:
 
@@ -55,7 +53,7 @@ This will use version 0.6.1 of the `inspec-azure` repository which was the lates
 https://github.com/chef/inspec-azure/archive/master.tar.gz
 ```
 
-### 4. Install Ruby Gem Dependencies
+### 3. Install Ruby Gem Dependencies
 
 The `inspec-azure` repository utilizes several ruby gems under the hood that aren't included with the InSpec gem yet. Eventually, these will most likely be added as a dependency for the InSpec gem. But, for now, we need to install them individually. Run the following command to install the gems required by `inspec-azure`.
 
@@ -63,7 +61,7 @@ The `inspec-azure` repository utilizes several ruby gems under the hood that are
 gem install ms_rest_azure azure_mgmt_resources azure_mgmt_compute azure_mgmt_network inifile
 ```
 
-### 5. Check the InSpec Profile
+### 4. Check the InSpec Profile
 
 InSpec has a built in tool that allows you to check your profile before you execute it. Do this now to see if there are any errors with your profile's configuration.
 
@@ -85,7 +83,7 @@ Valid:       true
 
 If you get a stacktrace, there are errors that must be corrected.
 
-### 6. Configure Microsoft Azure
+### 5. Configure Microsoft Azure
 
 Now that you have an InSpec profile configured to use the `inspec-azure` extension, you need to create an API so InSpec can interface with Microsoft Azure and gather the credentials needed to authenticate with Microsoft Azure. First, create a file in your home directory to hold these credentials.
 
@@ -126,7 +124,7 @@ client_secret = "2eNL2hZNSjufOMN4Kj7yueeKYrpcQqkCRZe0BBJpZfP="
 tenant_id = "12345678-90ab-cdef-1234-567890abcdef"
 ```
 
-### 7. Install Azure Resource manager
+### 6. Install Azure Resource manager
 
 There are PowerShell dependencies built into `inspec-azure` that require certain PowerShell libraries to exist on your local machine. To ensure they are installed, run the following command.
 
@@ -136,7 +134,7 @@ Install-Module AzureRM
 
 Answer `[Y] Yes` or `[A] Yes to All` when prompted.
 
-### 8. Begin Auditing
+### 7. Begin Auditing
 
 Now, you have all of the pieces necessary to start auditing your Microsoft Azure instance! A following tutorial will be written that goes into detail of how to use the built in controls for auditing Azure. But, for now, you update the `example.rb` file inside the `controls` folder to include the following, substituting your information where appropriate.
 
