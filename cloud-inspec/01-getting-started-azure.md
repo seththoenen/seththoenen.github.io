@@ -13,7 +13,7 @@ Co-Author: Shane Chaplain
 
 Date: 5/28/2017
 
-This is a comprehensive tutorial that will walk you through connecting your local Windows 10 machine to Microsft Azure so you can start writing InSpec tests. This tutorial will utilize the [inSpec-zzure](https://github.com/chef/inspec-azure) repository announced at ChefConf 2017. Eventually, this will be merged into the base InSpec gem.
+This is a comprehensive tutorial that will walk you through connecting your local Windows 10 machine to Microsoft Azure so you can start writing InSpec tests. This tutorial will utilize the [inSpec-azure](https://github.com/chef/inspec-azure) repository announced at ChefConf 2017. Eventually, this will be merged into the base InSpec gem.
 
 ### 1. Install the ChefDK
 
@@ -27,7 +27,7 @@ Navigate to a folder where you would like to place your InSpec profile. This tut
 inspec init profile azure-inspec-profile
 ```
 
-From here, cd into your newly created InSpec profile.
+From here, `cd` into your newly created InSpec profile.
 
 ```
 cd .\azure-inspec-profile
@@ -41,7 +41,7 @@ code .
 
 ### 3. Update InSpec.yml
 
-The `inspec-azure` repo contains an additional set of controls that add functionality to the base InSpec gem. In order to use them in your InSpec profile, you will need to create a dependency so your InSpec profile references the controls in the `inspec-azure` repo. You can do this by updating `inspec.yml` and appending the following code:
+The `inspec-azure` repository contains an additional set of controls that add functionality to the base InSpec gem. In order to use them in your InSpec profile, you will need to create a dependency so your InSpec profile references the controls in the `inspec-azure` repository. You can do this by updating `inspec.yml` and appending the following code:
 
 ```
 depends:
@@ -49,7 +49,7 @@ depends:
     url: https://github.com/chef/inspec-azure/archive/0.6.1.tar.gz
 ```
 
-This will use version 0.6.1 of the `inspec-azure` repo which was the latest version at the time of this writing. If you would like to use the latest version of the `inspec-azure` repo, replace the above URL with this one.
+This will use version 0.6.1 of the `inspec-azure` repository which was the latest version at the time of this writing. If you would like to use the latest version of the `inspec-azure` repository, replace the above URL with this one.
 
 ```
 https://github.com/chef/inspec-azure/archive/master.tar.gz
@@ -57,7 +57,7 @@ https://github.com/chef/inspec-azure/archive/master.tar.gz
 
 ### 4. Install Ruby Gem Dependencies
 
-The `inspec-azure` repo utilizes severl ruby gems under the hood that aren't included with the ChefDK. Eventually, these will most likely be added as a dependency for the InSpec gem. But, for now, we need to install them individually. Run the following command to install the gems required by `inspec-azure`.
+The `inspec-azure` repository utilizes several ruby gems under the hood that aren't included with the ChefDK. Eventually, these will most likely be added as a dependency for the InSpec gem. But, for now, we need to install them individually. Run the following command to install the gems required by `inspec-azure`.
 
 ```
 chef gem install ms_rest_azure azure_mgmt_resources azure_mgmt_compute azure_mgmt_network inifile
@@ -79,7 +79,7 @@ inspec check .
 
 Note: You must be inside the InSpec profile's directory for this to work.
 
-If everything is configbured properly, you should get outpout that looks like this:
+If everything is configured properly, you should get output that looks like this.
 
 ```
 Location:    .
@@ -115,7 +115,7 @@ Refer to the following guide to get your `SUBSCRIPTION_ID`: [Getting your Azure 
 
 Refer to the following guide to get your `CLIENT_ID`, `CLIENT_SECRET`, and to set up an API for InSpec scans: [Use portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal)
 
-To get your `TENANT_ID`, perform the folloowing steps in the Microsoft Azure Portal.
+To get your `TENANT_ID`, perform the following steps in the Microsoft Azure Portal.
 
 1. Click `Azure Active Directory` in the main left navigation menu.
 
@@ -123,7 +123,7 @@ To get your `TENANT_ID`, perform the folloowing steps in the Microsoft Azure Por
 
 3. The field labeled `Directory ID` is your `TENANT_ID`.
 
-Once you've gathered all of your credenaial information and created the necessary API, populate your credentials file. It should look something like this.
+Once you've gathered all of your credential information and created the necessary API, populate your credentials file. It should look something like this.
 
 ```
 [12345678-90ab-cdef-1234-567890abcdef]
@@ -144,7 +144,7 @@ Answer `[Y] Yes` or `[A] Yes to All` when prompted.
 
 ### 8. Begin Auditing
 
-Now, you have all of the pieces necessary to start auditing your Microsft Azure instance! A following tutorial will be written that goes into detail of how to use the built in controls for auditing Azure. But, for now, you update the `example.rb` file inside the `controls` folder to include the follwing, substituting your information where appropriate.
+Now, you have all of the pieces necessary to start auditing your Microsoft Azure instance! A following tutorial will be written that goes into detail of how to use the built in controls for auditing Azure. But, for now, you update the `example.rb` file inside the `controls` folder to include the following, substituting your information where appropriate.
 
 ```
 control 'azure-1' do
@@ -158,7 +158,7 @@ control 'azure-1' do
 end
 ```
 
-To execute this test against your Azure instace, run the following command.
+To execute this test against your Azure instance, run the following command.
 
 ```
 inspc exec .
