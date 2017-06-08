@@ -7,7 +7,7 @@ tutorial-order: 02
 permalink: /inspec/workstation-setup
 ---
 
-The following will guide you through how to get Inspec set up on a Windows system.
+The following will guide you through how to get InSpec set up on a Windows system.
 
 <h3>Install Chocolatey</h3>
 For this tutorial you are going to install software by using the [Chocolatey](https://chocolatey.org/) package manager. In order to install Chocolatey, run the below code snippet in a PowerShell window.
@@ -33,7 +33,7 @@ Note: you may have to close your Powershell window before using the `gem` comman
 gem install inspec
 ```
 
-After you have instaled InSpec, open a new PowerShell window, type `inspec` and press enter. If you are presented with an error message, you haven't installed InSpec. Otherwise, if you get output that looks similar to the below snippet, you have installed InSpec successfully.
+After you have installed InSpec, open a new PowerShell window, type `inspec` and press enter. If you are presented with an error message, you haven't installed InSpec. Otherwise, if you get output that looks similar to the below snippet, you have installed InSpec successfully.
 
 ```
 Commands:
@@ -80,7 +80,7 @@ choco install Atom
 ```
 
 <h3>Install ConEmu (Optional)</h3>
-I personally use [ConEmu](https://conemu.github.io/) which is a console emulator for Windows. It isn't rquired to complete any of the tutorials in this tutorial series, but I personally use ConEmu to run my PowerShell instances. It has some handy features such as support for multiple tabs and better copy/paste support.
+I personally use [ConEmu](https://conemu.github.io/) which is a console emulator for Windows. It isn't required to complete any of the tutorials in this tutorial series, but I personally use ConEmu to run my PowerShell instances. It has some handy features such as support for multiple tabs and better copy/paste support.
 
 To install ConEmu, run the following inside a PowerShell window:
 ```
