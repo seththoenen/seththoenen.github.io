@@ -26,9 +26,11 @@ choco install Ruby
 ```
 
 <h3>Install InSpec</h3>
-You can use Chocolatey to install InSpec as well. To do this run th ebelow code snippet in a PowerShell window.
+Once you have ruby installed, you can use it to install the InSpec gem. To do this run the below code snippet in a PowerShell window.
+
+Note: you may have to close your Powershell window before using the `gem` command.
 ```
-gem install InSpec
+gem install inspec
 ```
 
 After you have instaled InSpec, open a new PowerShell window, type `inspec` and press enter. If you are presented with an error message, you haven't installed InSpec. Otherwise, if you get output that looks similar to the below snippet, you have installed InSpec successfully.
