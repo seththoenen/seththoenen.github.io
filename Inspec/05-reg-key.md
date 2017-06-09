@@ -7,7 +7,7 @@ tutorial-order: 05
 permalink: /inspec/reg-keys
 ---
 
-As a Windows systems administrator, you've probably been in the registry more times than you can count. Luckily for us, there's a built in <a href="http://inspec.io/docs/reference/resources/registry_key/">registry key resource</a>. Before you continue with this tutorial, familiarize yourself with the `registry_key` resource.
+As a Windows systems administrator, you've probably been in the registry more times than you can count. Luckily for us, there's a built in <a href="http://inspec.io/docs/reference/resources/registry_key/" target="_blank">registry key resource</a>.
 
 Regisry keys are relitavely easy to audit with InSpec. Let's start with auditing the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}` key. This is where network interface card (NIC) settings are stored in the registry. This resgistry key should always exist and you can audit for existence like this:
 
@@ -36,7 +36,7 @@ describe registry_key('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class
 end
 {% endhighlight %}
 
-We could keep going and keep adding more criteria to this test, but you get the point. For more examples on different ways to use the `registry_key` resource, hit up the official documentation above. Now, let's go deeper into the `registry_key` resource.
+We could keep going and keep adding more criteria to this test, but you get the point. For more examples on different ways to use the `registry_key` resource, refer to the documentation linked above. Now, let's go deeper into the `registry_key` resource.
 
 <h3>Understanding the .children Method</h3>
 

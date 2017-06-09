@@ -16,39 +16,43 @@ For this tutorial you are going to install software by using the [Chocolatey](ht
 Set-ExecutionPolicy RemoteSigned;
 iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 ```
-Note: you may have to close your Powershell window before using Chocolatey.
+Note: you may have to close and reopen your Powershell window before using Chocolatey.
 
 <h3>Install Ruby</h3>
 Once you have Chocolatey installed you can use it to install Ruby. To do this run the below code snippet in a PowerShell window.
 
 ```
-choco install Ruby
+choco install ruby
 ```
 
 <h3>Install InSpec</h3>
-Once you have ruby installed, you can use it to install the InSpec gem. To do this run the below code snippet in a PowerShell window.
+Once you have Ruby installed, you can use it to install the InSpec gem. To do this run the below code snippet in a PowerShell window.
 
-Note: you may have to close your Powershell window before using the `gem` command.
+Note: you may have to close and reopen your Powershell window before using the `gem` command.
 ```
 gem install inspec
 ```
 
-After you have installed InSpec, open a new PowerShell window, type `inspec` and press enter. If you are presented with an error message, you haven't installed InSpec. Otherwise, if you get output that looks similar to the below snippet, you have installed InSpec successfully.
+Note: you may have to close and reopen your Powershell window before using the InSpec gem.
+
+After you have installed InSpec, open a new PowerShell window, type `inspec` and press enter. You should get output that looks similar to the below snippet, you have installed InSpec successfully.
 
 ```
 Commands:
   inspec archive PATH                # archive a profile to tar.gz (default) ...
+  inspec artifact SUBCOMMAND ...     # Sign, verify and install artifacts
   inspec check PATH                  # verify all tests at the specified PATH
   inspec compliance SUBCOMMAND ...   # Chef Compliance commands
   inspec detect                      # detect the target OS
   inspec env                         # Output shell-appropriate completion co...
   inspec exec PATHS                  # run all test files at the specified PATH.
+  inspec habitat SUBCOMMAND ...      # Commands for InSpec + Habitat Integration
   inspec help [COMMAND]              # Describe available commands or one spe...
   inspec init TEMPLATE ...           # Scaffolds a new project
   inspec json PATH                   # read all tests in PATH and generate a ...
   inspec shell                       # open an interactive debugging shell
   inspec supermarket SUBCOMMAND ...  # Supermarket commands
-  inspec vendor                      # Download all dependencies and generate...
+  inspec vendor PATH                 # Download all dependencies and generate...
   inspec version                     # prints the version of this tool
 
 Options:

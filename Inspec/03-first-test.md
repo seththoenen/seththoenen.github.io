@@ -7,9 +7,9 @@ tutorial-order: 03
 permalink: /inspec/first-test
 ---
 
-Now that your workstation is set up, you are ready to crank out some InSpec tests. For this tutorial series, all example files will be placed inside a folder located at `C:\InSpec\`. 
+Now that your workstation is set up, you are ready to crank out some InSpec tests. For this tutorial series, all example files will be placed inside a folder located at `C:\inspec\`. 
 
-Create a new file and call it `first-test.rb` inside the `C:\InSpec\` folder. Open the file with your text editor of choice. You are going to use the same test mentioned in the first tutorial for this example. Write the following code in your `first-test.rb` file.
+Create a new file and call it `first-test.rb` inside the `C:\inspec\` folder. Open the file with your text editor of choice. You are going to use the same test mentioned in the first tutorial for this example. Write the following code in your `first-test.rb` file.
 
 {% highlight ruby %}
 describe directory('C:\Windows') do
@@ -17,7 +17,7 @@ describe directory('C:\Windows') do
 end
 {% endhighlight %}
 
-Save `first-test.rb` and open up a PowerShell window. Navitage to the `C:\InSpec\` directory and run the following command:
+Save `first-test.rb` and open up a PowerShell window. Navitage to the `C:\inspec\` directory and run the following command:
 
 ```
 inspec exec .\first-test.rb
@@ -26,13 +26,15 @@ inspec exec .\first-test.rb
 You should get output that looks like this:
 
 ```
-C:\InSpec> inspec exec .\first-test.rb
+C:\inspec> inspec exec .\first-test.rb
 
+Profile: tests from .\first-test.rb
+Version: (not specified)
 Target:  local://
 
 
   File C:\Windows
-     ✔  should exist
+     [PASS]  should exist
 
 Test Summary: 1 successful, 0 failures, 0 skipped
 ```

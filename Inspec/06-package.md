@@ -7,7 +7,7 @@ tutorial-order: 06
 permalink: /inspec/package
 ---
 
-The `package` InSpec resource allows audits of packages installed on the system. The official InSpec documentation provides the following example:
+InSpec's `package` resource allows audits of packages installed on the system. The official InSpec documentation provides the following example:
 
 {% highlight ruby %}
 describe package('name') do
@@ -60,7 +60,7 @@ end
 Alternatively, you can ensure a package isn't installed. To do this, simply use `it { should_not be_installed }` like this:
 
 {% highlight ruby %}
-describe package('vi') do
+describe package('emacs') do
   it { should_not be_installed }
 end
 {% endhighlight %}
