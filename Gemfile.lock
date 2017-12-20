@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     colorator (1.1.0)
     ffi (1.9.18-x64-mingw32)
@@ -44,7 +44,7 @@ DEPENDENCIES
   minima
 
 RUBY VERSION
-   ruby 2.4.1p111
+   ruby 2.4.2p198
 
 BUNDLED WITH
-   1.15.0
+   1.16.0
